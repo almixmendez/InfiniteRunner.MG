@@ -22,11 +22,6 @@ public class GroundTile : MonoBehaviour
         Destroy(gameObject, 2);
     }
 
-    private void Update()
-    {
-        
-    }
-
     void SpawnObstacle()
     {
         GameObject obstacleToSpawn = obstaclePrefab;

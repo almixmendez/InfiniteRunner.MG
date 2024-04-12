@@ -2,13 +2,14 @@ using System.Collections;
 using UnityEngine.UI;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
     int score;
     public static GameManager inst;
 
-    public Text scoreText;
+    public TextMeshProUGUI scoreText;
 
     [SerializeField] PlayerMovement playerMovement;
 
@@ -25,14 +26,9 @@ public class GameManager : MonoBehaviour
         inst = this;
     }
 
-    void Start()
+    public void QuitGame()
     {
-        
-    }
-
-    
-    void Update()
-    {
-        
+        Debug.Log("Quit!");
+        Application.Quit();
     }
 }

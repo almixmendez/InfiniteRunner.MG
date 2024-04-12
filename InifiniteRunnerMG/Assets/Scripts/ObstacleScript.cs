@@ -18,9 +18,4 @@ public class ObstacleScript : MonoBehaviour
             playerMovement.Die();
         }
     }
-
-    void Update()
-    {
-        
-    }
 }
